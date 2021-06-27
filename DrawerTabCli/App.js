@@ -20,6 +20,7 @@ import MemoryListScreen from './src/Screens/MemoryListScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import StoreTabStackScreen from './src/Routers/StoreTabStackScreen';
 import MainTabStackScreen from './src/Routers/MainTabStackScreen';
+import DrawerStackScreen from './src/Routers/DrawerStackScreen';
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={{flex: 1}}>
         {/*<StoreTabStackScreen />*/}
-        <MainTabStackScreen />
+        <DrawerStackScreen />
       </SafeAreaView>
     </NavigationContainer>
   );
