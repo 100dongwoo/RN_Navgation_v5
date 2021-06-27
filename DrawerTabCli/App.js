@@ -27,7 +27,6 @@ const App = () => {
     <NavigationContainer>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={{flex: 1}}>
-        {/*<StoreTabStackScreen />*/}
         <DrawerStackScreen />
       </SafeAreaView>
     </NavigationContainer>

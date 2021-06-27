@@ -8,6 +8,7 @@ import CpuListScreen from '../Screens/CpuListScreen';
 import DetailScreen from '../Screens/DetailScreen';
 import BoardListScreen from '../Screens/BoardListScreen';
 import MemoryListScreen from '../Screens/MemoryListScreen';
+import MenuButton from './MenuButton';
 const MainTab = createBottomTabNavigator();
 
 const CpuStack = createStackNavigator();
@@ -19,6 +20,7 @@ const CpuStackScreen = ({navigation}) => {
         component={CpuListScreen}
         options={{
           title: 'CPU 리스트',
+          headerLeft: () => <MenuButton />,
         }}
       />
     </CpuStack.Navigator>
@@ -32,7 +34,7 @@ const BoardStackScreen = ({navigation}) => {
       <BoardStack.Screen
         name="boardlist"
         component={BoardListScreen}
-        options={{}}
+        options={{headerLeft: () => <MenuButton />}}
       />
     </BoardStack.Navigator>
   );
@@ -45,7 +47,7 @@ const MemoryStackScreen = ({navigation}) => {
       <MemoryStack.Screen
         name="memorylist"
         component={MemoryListScreen}
-        options={{}}
+        options={{headerLeft: () => <MenuButton />}}
       />
     </MemoryStack.Navigator>
   );
@@ -60,6 +62,7 @@ const StoreStackScreen = ({navigation}) => {
         component={StoreTabStackScreen}
         options={{
           title: '온라인 쇼핑몰',
+          headerLeft: () => <MenuButton />,
         }}
       />
     </StoreStack.Navigator>
