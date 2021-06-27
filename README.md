@@ -17,8 +17,8 @@ react-native-safe-area-context
 react-native-vector-icons 
 react-native-tab-view 
 @react-navigation/material-top-tabs 
+@react-native-community/viewpager
 redux react-redux
-
 <hr/>
 
 ##
